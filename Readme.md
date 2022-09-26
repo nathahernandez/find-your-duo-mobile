@@ -11,6 +11,7 @@ Find Your Duo Mobile é um aplicativo que visa encontrar um duo para você bater
 
 ## 🔧 Tecnologias
 <div>
+    <img src="https://img.shields.io/badge/Mobile-4c1d95?style=for-the-badge" alt="Mobile" />
     <a href="https://www.typescriptlang.org/" alt="Typescript">
         <img src="https://img.shields.io/badge/typescript-18181B?style=for-the-badge&logo=TypeScript" />
     </a>
@@ -20,10 +21,28 @@ Find Your Duo Mobile é um aplicativo que visa encontrar um duo para você bater
     <a href="https://expo.dev/" alt="Expo">
         <img src="https://img.shields.io/badge/expo-18181B?style=for-the-badge&logo=Expo" /> 
     </a>
+    <br>
+    <img src="https://img.shields.io/badge/Backend%20|%20Database-4c1d95?style=for-the-badge" alt="Backend e Database" />
+    <a href="https://www.typescriptlang.org/" alt="Typescript">
+        <img src="https://img.shields.io/badge/typescript-18181B?style=for-the-badge&logo=TypeScript" />
+    </a>
+    <a href="https://nodejs.org/en/" alt="NodeJS">
+        <img src="https://img.shields.io/badge/node-18181B?style=for-the-badge&logo=Node.js" />
+    </a>
+    <a href="https://expressjs.com/" alt="Express">
+        <img src="https://img.shields.io/badge/express-18181B?style=for-the-badge&logo=Express" />
+    </a>
+    <a href="https://www.prisma.io/" alt="Prisma">
+        <img src="https://img.shields.io/badge/prisma%20ORM-18181B?style=for-the-badge&logo=Prisma" />
+    </a>
+    <a href="https://www.sqlite.org/index.html" alt="SQLite">
+        <img src="https://img.shields.io/badge/SQLite-18181B?style=for-the-badge&logo=SQLite" />
+    </a>
 </div>
 
 ## ➡️ Next Updates
 <div>
+    <img src="https://img.shields.io/badge/Mobile-4c1d95?style=for-the-badge" alt="Mobile" />
     <a href="https://styled-components.com/" alt="Styled Components">
         <img src="https://img.shields.io/badge/styled%20components-18181B?style=for-the-badge&logo=styled-components" />
     </a>
