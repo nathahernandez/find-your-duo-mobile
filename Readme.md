@@ -3,7 +3,8 @@
 <br>
 
 <div display='flex' align='center'>
-    <img src="https://i.giphy.com/media/9yIN9QhxIz1XRq5nnc/giphy.webp" />
+    <img src="https://media0.giphy.com/media/Ih3hDrcbtugCTUwVXu/giphy.gif?cid=790b76117f796a571ada66cf78c46cfd11760707f9033e0c&rid=giphy.gif&ct=g" />
+    <img src="https://media1.giphy.com/media/afavHxmaJA6sKxhlil/giphy.gif?cid=790b761169714b986977462dce59ec58e2529bd646d804d7&rid=giphy.gif&ct=g" />
 </div>
 
 ## 🚀 Descrição
