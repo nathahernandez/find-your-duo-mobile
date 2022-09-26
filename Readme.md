@@ -66,7 +66,8 @@ $ npm install
 $ cd find-your-duo-mobile/server
 $ npm install
 
-# Na pasta server renomeie o arquivo .env.example para .env (passo necessário para o datasource do prisma ter acesso ao path do arquivo SQLite)
+# Na pasta server renomeie o arquivo .env.example para .env 
+# Passo necessário para o datasource do prisma ter acesso ao path do arquivo SQLite
 $ mv .env.example .env
 
 # Inicie o Backend para consumir eles no Mobile
