@@ -41,7 +41,7 @@ export function Home () {
                 <ContentList 
                     data={games}
                     keyExtractor={(game : GameCardProps) => game.id}
-                    renderItem={ ({ item } : any ) => <GameCard onPress={() => handleOpenGame(item)} data={item} />}
+                    renderItem={ ( { item } : any) => <GameCard onPress={() => handleOpenGame(item)} data={item} />}
                     showsHorizontalScrollIndicator={false}
                     horizontal
                 />

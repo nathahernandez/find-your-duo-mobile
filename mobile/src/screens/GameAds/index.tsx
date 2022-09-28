@@ -1,9 +1,9 @@
-import { styles } from './styles'
+import { styles, ViewHeader, ImageLogo, ViewAux, GameImage, ContainerList, GoBack } from './styles'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { BackgroundIMG } from "../../components/Background/index"
 import { useRoute, useNavigation } from '@react-navigation/native'
 import { GameParams } from '../../@types/navigation'
-import { View, TouchableOpacity, Image, FlatList } from 'react-native'
+import { TouchableOpacity } from 'react-native'
 import { Entypo } from '@expo/vector-icons'
 import LogoImg from '../../assets/logo-nlw-esports.png'
 import { THEME } from '../../theme'
@@ -52,8 +52,9 @@ export function GameAds () {
     return (
         <BackgroundIMG>
             <SafeAreaView style={styles.container}>
-                <View style={styles.header}>
-                    <TouchableOpacity
+
+                <ViewHeader>
+                    <GoBack
                         onPress={handleGoBack}
                     >
                         <Entypo 
@@ -61,18 +62,17 @@ export function GameAds () {
                             color={THEME.COLORS.CAPTION_300}
                             size={20}
                         />
-                    </TouchableOpacity>
-                    <Image 
+                    </GoBack>
+                    <ImageLogo
                         source={LogoImg}
-                        style={styles.logo}
                     />
-                    <View style={styles.right} />
-                </View>
-                <Image
+                    <ViewAux />
+                </ViewHeader>
+
+                <GameImage
                     source={{
                         uri: params.bannerURL
                     }}
-                    style={styles.gameImg}
                     resizeMode='cover'
                 />
 
@@ -80,15 +80,16 @@ export function GameAds () {
                     title={params.title}
                     subtitle='Conecte-se e comece a jogar!'
                 />
-                <FlatList 
+                
+                <ContainerList 
                     horizontal
                     data={Ads}
-                    keyExtractor={item => item.id}
-                    renderItem={ ({ item }) => <AdCards onConnect={() => getDiscordUser(item.id)} data={item} /> }
-                    contentContainerStyle={styles.contentList}
+                    keyExtractor={(item : any)=> item.id}
+                    contentContainerStyle={styles.containerList}
+                    renderItem={ ({ item } : any) => <AdCards onConnect={() => getDiscordUser(item.id)} data={item} /> }
                     showsHorizontalScrollIndicator={false}
-                    style={styles.containerList}
                 />
+                
                 <Match 
                     onClose={onClose}
                     visible={discordSelected.length > 0 }
