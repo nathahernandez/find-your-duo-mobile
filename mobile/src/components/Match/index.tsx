@@ -1,8 +1,8 @@
-import { styles } from "./styles"
-import { Text, View, Modal, ModalProps, TouchableOpacity, Alert, ActivityIndicator } from "react-native"
+import { ButtonClose, DiscordBox, DiscordText, LabelText, ViewContainer, ViewContent } from "./styles"
+import { Modal, ModalProps, Alert, ActivityIndicator } from "react-native"
 import { MaterialIcons, AntDesign } from '@expo/vector-icons'
 import { THEME } from '../../theme'
-import { Heading } from "../Heading"
+import { MatchHeading } from "./MatchHeading"
 import * as Clipboard from 'expo-clipboard';
 
 import { useState } from 'react'
@@ -29,31 +29,30 @@ export function Match({onClose, discord, ...props} : Props) {
             animationType="fade"
             {...props}
         >
-            <View style={styles.container}>
-                <View style={styles.content}>
+            <ViewContainer>
+                <ViewContent>
                     
-                    <TouchableOpacity style={styles.close} onPress={onClose}>
+                    <ButtonClose onPress={onClose}>
                         <MaterialIcons name='close' size={20} color={THEME.COLORS.CAPTION_500} />
-                    </TouchableOpacity>
+                    </ButtonClose>
                     
                     <AntDesign name="checkcircleo" size={64} color={THEME.COLORS.SUCCESS} />
                     
-                    <Heading title="Let's play !" subtitle="Agora é só começar a jogar!" style={styles.heading} />
+                    <MatchHeading title="Let's play !" subtitle="Agora é só começar a jogar!" />
                     
-                    <Text style={styles.label}>
+                    <LabelText>
                         Adicione o Discord
-                    </Text>
-                    <TouchableOpacity 
-                            style={styles.discordBox} 
+                    </LabelText>
+                    <DiscordBox
                             onPress={handleCopyDiscordUser}
                             disabled={isCopying}
                     >
-                        <Text style={styles.discord}>
+                        <DiscordText>
                                 { isCopying ? <ActivityIndicator color={THEME.COLORS.PRIMARY} /> : discord }
-                        </Text>
-                    </TouchableOpacity>
-                </View>
-            </View>
+                        </DiscordText>
+                    </DiscordBox>
+                </ViewContent>
+            </ViewContainer>
         </Modal>
     )
 }
