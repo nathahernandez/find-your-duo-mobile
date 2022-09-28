@@ -1,5 +1,4 @@
-import { View, TouchableOpacity, Text } from 'react-native'
-import { styles } from '../AdCards/styles'
+import { ViewContainer, Button, Text } from '../AdCards/styles'
 import { CardInfo } from '../CardInfo'
 import { AdsProps } from '../../screens/GameAds'
 import { THEME } from '../../theme'
@@ -13,36 +12,35 @@ interface Props {
 export function AdCards ({ data, onConnect } : Props) {
 
     return (
-        <View style={styles.container}>
+        <ViewContainer>
             <CardInfo 
                 label='NOME'
                 value={data.name}
-                colorValue='#FFFFFF'
+                colorValue={THEME.COLORS.TEXT}
             />
             <CardInfo 
                 label='Tempo de Jogo'
                 value={`${data.yearsPlaying} anos`}
-                colorValue='#FFFFFF'
+                colorValue={THEME.COLORS.TEXT}
             />
             <CardInfo 
                 label='Disponibilidade'
                 value={`${data.weekDays.length} dias\u2022${data.hourStart}-${data.hourEnd}`}
-                colorValue='#FFFFFF'
+                colorValue={THEME.COLORS.TEXT}
             />
             <CardInfo 
                 label='Chamada de áudio ?'
                 value={data.useVoice ? 'Sim' : 'Não'}
                 colorValue={data.useVoice ? THEME.COLORS.SUCCESS : THEME.COLORS.ALERT}
             />
-            <TouchableOpacity
-                style={styles.button}
+            <Button
                 onPress={onConnect}
             >
-                <SimpleLineIcons name="game-controller" size={20} color='#ffffff' />
-                <Text style={styles.text}>
+                <SimpleLineIcons name="game-controller" size={20} color={THEME.COLORS.TEXT} />
+                <Text>
                     Conectar
                 </Text>
-            </TouchableOpacity>
-        </View>
+            </Button>
+        </ViewContainer>
     )
 }

@@ -1,28 +1,28 @@
-import { StyleSheet } from 'react-native' 
 import { THEME } from '../../theme'
+import styled from 'styled-components/native'
 
-export const styles = StyleSheet.create({
-    container: {
-        width: 180,
-        backgroundColor: THEME.COLORS.SHAPE,
-        borderRadius: 8,
-        padding: 20,
-        marginRight: 16
-    },
-    button: {
-        width: '100%',
-        height: 36,
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        backgroundColor: THEME.COLORS.PRIMARY,
-        borderRadius: 6,
-        paddingHorizontal: 22
-    },
-    text: {
-        marginLeft: 4,
-        color: '#ffffff',
-        fontSize: 14,
-        fontFamily: THEME.FONT_FAMILY.SEMI_BOLD
-    }
-})
+export const ViewContainer = styled.View`
+    width: 180px;
+    background-color: ${THEME.COLORS.SHAPE};
+    border-radius: 8px;
+    padding: 20px;
+    margin-right: 16px;
+`;
+export const Button = styled.TouchableOpacity`
+    width: 100%;
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: ${THEME.COLORS.PRIMARY};
+    border-radius: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+`;
+export const Text = styled.Text`
+    margin-left: 4px;
+    font-size: 14px;
+    font-family: ${THEME.FONT_FAMILY.SEMI_BOLD};
+    color: ${THEME.COLORS.TEXT};
+`;
