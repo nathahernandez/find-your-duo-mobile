@@ -3,7 +3,6 @@ import { Heading } from "../../components/Heading";
 import { GameCard } from "../../components/GameCard";
 import { api } from "../../services/api";
 import { GameCardProps } from '../../components/GameCard/index';
-import { BG } from "../../components/Background";
 
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useNavigation } from '@react-navigation/native';
@@ -13,6 +12,7 @@ import { ContentList,
          ImageLogo, 
          styles 
 } from './styles';
+import { BackgroundIMG } from '../../components/Background/index';
 
 export function Home () {
 
@@ -32,7 +32,7 @@ export function Home () {
     }
 
     return (
-        <BG>
+        <BackgroundIMG>
             <SafeAreaView style={styles.container}>
                 <ImageLogo
                     source={Logo}
@@ -46,6 +46,6 @@ export function Home () {
                     horizontal
                 />
             </SafeAreaView>
-        </BG>
+        </BackgroundIMG>
     )
 }

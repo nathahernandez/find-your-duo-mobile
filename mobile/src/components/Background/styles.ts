@@ -1,9 +1,7 @@
-import { StyleSheet } from "react-native";
-import { THEME  } from "../../theme";
+import styled from "styled-components/native";
 
-export const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: THEME.COLORS.BACKGROUND_800
-    }
-})
+export const ImageBackground = styled.ImageBackground`
+    display: flex;
+    flex-grow: 1;
+    background-color: #18181B;
+`;

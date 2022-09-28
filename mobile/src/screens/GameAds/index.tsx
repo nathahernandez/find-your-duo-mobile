@@ -1,6 +1,6 @@
 import { styles } from './styles'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import { BG } from "../../components/Background"
+import { BackgroundIMG } from "../../components/Background/index"
 import { useRoute, useNavigation } from '@react-navigation/native'
 import { GameParams } from '../../@types/navigation'
 import { View, TouchableOpacity, Image, FlatList } from 'react-native'
@@ -13,7 +13,6 @@ import { api } from '../../services/api'
 import { Match } from '../../components/Match'
 
 import { useState, useEffect } from 'react';
-import axios from 'axios'
 
 export interface AdsProps {
     createdAt: string
@@ -51,7 +50,7 @@ export function GameAds () {
     }, [])
 
     return (
-        <BG>
+        <BackgroundIMG>
             <SafeAreaView style={styles.container}>
                 <View style={styles.header}>
                     <TouchableOpacity
@@ -96,6 +95,6 @@ export function GameAds () {
                     discord={discordSelected}
                 />
             </SafeAreaView>
-        </BG>
+        </BackgroundIMG>
     )
 }

@@ -1,4 +1,4 @@
-import { BG } from './src/components/Background/index'
+import { BackgroundIMG } from './src/components/Background/index'
 import { StatusBar } from 'react-native'
 import { useRef, useEffect } from 'react'
 import { Subscription } from 'expo-modules-core'
@@ -30,13 +30,13 @@ export default function App() {
   });
 
   return (
-    <BG>  
+    <BackgroundIMG>  
         <StatusBar 
             barStyle='light-content'
             backgroundColor='transparent'
             translucent 
           />
           {fontsLoaded ? <Routes /> : <Loading />}
-    </BG>
+    </BackgroundIMG>
   );
 }

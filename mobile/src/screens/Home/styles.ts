@@ -6,7 +6,7 @@ export const styles = StyleSheet.create({
         flex: 1,
         alginItems: 'center'
     },
-})
+});
 
 export const ContentList = styled.FlatList`
     padding-left: 32px;
