@@ -22,6 +22,9 @@ Find Your Duo Mobile é um aplicativo que visa encontrar um duo para você bater
     <a href="https://expo.dev/" alt="Expo">
         <img src="https://img.shields.io/badge/expo-18181B?style=for-the-badge&logo=Expo" /> 
     </a>
+    <a href="https://styled-components.com/" alt="Styled Components">
+        <img src="https://img.shields.io/badge/styled%20components-18181B?style=for-the-badge&logo=styled-components" />
+    </a>
     <br>
     <img src="https://img.shields.io/badge/Backend%20|%20Database-4c1d95?style=for-the-badge" alt="Backend e Database" />
     <a href="https://www.typescriptlang.org/" alt="Typescript">
@@ -44,9 +47,6 @@ Find Your Duo Mobile é um aplicativo que visa encontrar um duo para você bater
 ## ➡️ Next Updates
 <div>
     <img src="https://img.shields.io/badge/Mobile-4c1d95?style=for-the-badge" alt="Mobile" />
-    <a href="https://styled-components.com/" alt="Styled Components">
-        <img src="https://img.shields.io/badge/styled%20components-18181B?style=for-the-badge&logo=styled-components" />
-    </a>
     <a href="https://redux.js.org/" alt="Redux">
         <img src="https://img.shields.io/badge/redux-18181B?style=for-the-badge&logo=Redux&logoColor=764ABC" /> 
     </a>
