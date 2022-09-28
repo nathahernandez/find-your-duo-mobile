@@ -5,7 +5,7 @@ import { TextSubTitle,
          View
 } from './styles'
 
-interface HeadingProps extends ViewProps {
+export interface HeadingProps extends ViewProps {
     title: string,
     subtitle: string,
 }

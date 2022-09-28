@@ -6,12 +6,10 @@ export const View = styled.View`
     padding: 32px;
 `;
 export const TextTitle = styled.Text`
-    color: ${THEME.COLORS.TEXT};
-    font-size: ${THEME.FONT_SIZE.LG};
-    font-family: ${THEME.FONT_FAMILY.BLACK};
+    color: #FFFFFF;
+    font-size: 24px;;
 `;
 export const TextSubTitle = styled.Text`
     color: ${THEME.COLORS.CAPTION_400};
-    font-size: ${THEME.FONT_SIZE.MD};
-    font-family: ${THEME.FONT_FAMILY.REGULAR};
+    font-size: 16px;
 `;
