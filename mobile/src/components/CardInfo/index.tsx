@@ -1,27 +1,24 @@
-import { View, Text } from 'react-native'
-import { styles } from '../CardInfo/styles'
+import { ViewContainer, TextLabel, TextValue } from '../CardInfo/styles'
 import { THEME } from '../../theme'
 
-interface Props {
+interface CardInfoProps {
     label: string
     value: string
     colorValue?: string
 }
 
-export function CardInfo ({ label, value, colorValue = THEME.COLORS.TEXT } : Props) {
+export function CardInfo ({ label, value, colorValue = THEME.COLORS.TEXT } : CardInfoProps) {
+
     return (
-        <View style={styles.container}>
-            <Text style={styles.label}>
+        <ViewContainer>
+            <TextLabel>
                 {label}
-            </Text>
-            <Text style={[ 
-                styles.value, 
-                {color: colorValue} 
-                ]}
+            </TextLabel>
+            <TextValue style={{color: colorValue}}
                 numberOfLines={1}
             >
                 {value}
-            </Text>
-        </View>
+            </TextValue>
+        </ViewContainer>
     )
 }

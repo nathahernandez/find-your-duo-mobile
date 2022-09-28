@@ -1,19 +1,16 @@
-import { StyleSheet } from 'react-native' 
 import { THEME } from '../../theme'
+import styled from 'styled-components/native'
 
-export const styles = StyleSheet.create({
-    container: {
-        width: '100%',
-        marginBottom: 16
-    },
-    label: {
-        color: THEME.COLORS.CAPTION_300,
-        fontSize: THEME.FONT_SIZE.SM,
-        fontFamily: THEME.FONT_FAMILY.REGULAR,
-        marginBottom: 4
-    },
-    value: {
-        fontSize: THEME.FONT_SIZE.SM,
-        fontFamily: THEME.FONT_FAMILY.BOLD,
-    }
-})
+export const ViewContainer = styled.View`
+    width: 100%;
+    margin-bottom: 16px;
+`;
+export const TextLabel = styled.Text`
+    color: ${THEME.COLORS.CAPTION_300};
+    font-size: ${THEME.FONT_SIZE.SM};
+    font-family: ${THEME.FONT_FAMILY.REGULAR};
+`;
+export const TextValue = styled.Text`
+    font-size: ${THEME.FONT_SIZE.SM};
+    font-family: ${THEME.FONT_FAMILY.BOLD};
+`;
