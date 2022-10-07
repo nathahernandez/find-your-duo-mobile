@@ -7,10 +7,10 @@ export const ViewContainer = styled.View`
 `;
 export const TextLabel = styled.Text`
     color: ${THEME.COLORS.CAPTION_300};
-    font-size: ${THEME.FONT_SIZE.SM};
+    font-size: ${THEME.FONT_SIZE.SM}px;
     font-family: ${THEME.FONT_FAMILY.REGULAR};
 `;
 export const TextValue = styled.Text`
-    font-size: ${THEME.FONT_SIZE.SM};
+    font-size: ${THEME.FONT_SIZE.SM}px;
     font-family: ${THEME.FONT_FAMILY.BOLD};
 `;

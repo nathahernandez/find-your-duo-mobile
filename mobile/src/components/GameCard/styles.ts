@@ -17,12 +17,12 @@ export const CardBgImage = styled.ImageBackground`
 `;
 export const TextName = styled.Text`
     color: ${THEME.COLORS.TEXT};
-    font-size: ${THEME.FONT_SIZE.MD};
+    font-size: ${THEME.FONT_SIZE.MD}px;
     font-family: ${THEME.FONT_FAMILY.BOLD};
 `;
 export const TextAds = styled.Text`
     color: ${THEME.COLORS.CAPTION_300};
-    font-size: ${THEME.FONT_SIZE.MD};
+    font-size: ${THEME.FONT_SIZE.MD}px;
     font-family: ${THEME.FONT_FAMILY.REGULAR};
 `;
 

@@ -12,6 +12,7 @@ import { ContentList,
          ImageLogo, 
          styles 
 } from './styles';
+
 import { BackgroundIMG } from '../../components/Background/index';
 
 export function Home () {

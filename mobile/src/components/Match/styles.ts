@@ -32,13 +32,13 @@ export const DiscordBox = styled.TouchableOpacity`
 `;
 export const DiscordText = styled.Text`
     color: ${THEME.COLORS.TEXT};
-    font-size: ${THEME.FONT_SIZE.MD};
+    font-size: ${THEME.FONT_SIZE.MD}px;
     font-family: ${THEME.FONT_FAMILY.REGULAR};
 `;
 export const LabelText = styled.Text`
     margin-top: 24px;
     color: ${THEME.COLORS.TEXT};
-    font-size: ${THEME.FONT_SIZE.MD};
+    font-size: ${THEME.FONT_SIZE.MD}px;
     font-family: ${THEME.FONT_FAMILY.BOLD};
 `;
 export const ButtonClose = styled.TouchableOpacity`
